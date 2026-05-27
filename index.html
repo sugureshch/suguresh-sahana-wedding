@@ -246,7 +246,8 @@ footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(
 
 <!-- MUSIC -->
 <audio id="bgMusic" loop preload="auto">
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Raag_Bhairavi_on_Shehnai.ogg" type="audio/ogg">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Shehnai_by_Bismillah_Khan.ogg" type="audio/ogg">
 </audio>
 <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Toggle Music">🎵</button>
 
@@ -486,7 +487,7 @@ document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.
 const audio=document.getElementById('bgMusic');
 const btn=document.getElementById('musicBtn');
 let musicStarted=false;
-audio.volume=0.3;
+audio.volume=0.15;
 
 function startMusic(){
   if(!musicStarted){
