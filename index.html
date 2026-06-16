@@ -43,10 +43,11 @@ body{background:var(--deep-blue);color:var(--text);font-family:"Cormorant Garamo
 .cd-num{font-family:"Cinzel",serif;color:var(--gold-light);font-size:clamp(1.6rem,4vw,2.6rem);font-weight:600;display:block;min-width:52px;text-shadow:0 0 20px rgba(184,150,46,.5)}
 .cd-label{color:rgba(255,255,255,.45);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase}
 .cd-sep{color:rgba(184,150,46,.6);font-size:2rem;align-self:flex-start;padding-top:4px}
-.scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;animation:fadeUp .9s 2s forwards}
-.scroll-hint span{color:rgba(255,255,255,.35);font-family:"Cinzel",serif;font-size:.58rem;letter-spacing:.25em}
-.scroll-arrow{width:1px;height:36px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollPulse 1.8s ease-in-out infinite}
-@keyframes scrollPulse{0%,100%{opacity:.4;height:28px}50%{opacity:1;height:46px}}
+.scroll-hint{position:absolute;bottom:24px;left:0;right:0;margin:0 auto;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;animation:fadeUp .9s 2s forwards;text-align:center;width:100%}
+.scroll-hint span{color:var(--gold-light);font-family:"Cinzel",serif;font-size:.6rem;letter-spacing:.32em;text-align:center;display:block;text-shadow:0 0 12px rgba(0,0,0,1),0 0 24px rgba(0,0,0,1)}
+.scroll-icon{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;background:rgba(10,18,40,.7);backdrop-filter:blur(6px);box-shadow:0 0 18px rgba(184,150,46,.5),inset 0 0 10px rgba(184,150,46,.1);animation:iconBounce 1.8s ease-in-out infinite}
+.scroll-icon svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+@keyframes iconBounce{0%,100%{transform:translateY(0);box-shadow:0 0 18px rgba(184,150,46,.5)}50%{transform:translateY(6px);box-shadow:0 0 28px rgba(184,150,46,.9)}}
 nav{background:rgba(10,18,36,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(184,150,46,.2)}
 nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap;padding:0 8px}
 nav a{display:block;padding:14px 16px;color:rgba(255,255,255,.65);text-decoration:none;font-family:"Cinzel",serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;transition:color .3s,border-bottom .3s;border-bottom:2px solid transparent}
@@ -193,7 +194,7 @@ nav a{padding:11px 10px;font-size:.56rem}
 <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-label">Secs</span></div>
 </div>
 </div>
-<div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
+<div class="scroll-hint"><span>Scroll</span><div class="scroll-icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div>
 </section>
 
 <nav><ul>
