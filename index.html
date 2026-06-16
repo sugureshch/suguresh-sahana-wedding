@@ -22,7 +22,7 @@ body{background:var(--deep-blue);color:var(--text);font-family:"Cormorant Garamo
 .f-corner.tl{top:16px;left:16px;border-width:2px 0 0 2px}.f-corner.tr{top:16px;right:16px;border-width:2px 2px 0 0}
 .f-corner.bl{bottom:16px;left:16px;border-width:0 0 2px 2px}.f-corner.br{bottom:16px;right:16px;border-width:0 2px 2px 0}
 .hero-inner{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;width:100%;max-width:700px}
-.hero-blessing{font-family:"Cinzel",serif;color:var(--gold-light);font-size:clamp(.68rem,1.8vw,.88rem);font-weight:300;letter-spacing:.28em;line-height:2.8;margin-bottom:24px;opacity:0;animation:fadeUp .9s .4s forwards;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.hero-blessing{font-family:"Cinzel",serif;color:var(--gold-light);font-size:clamp(.62rem,1.6vw,.8rem);font-weight:300;letter-spacing:.22em;line-height:2.6;opacity:0;animation:fadeUp .9s .4s forwards;text-shadow:0 1px 10px rgba(0,0,0,.7);position:absolute;top:28px;left:0;right:0;text-align:center;z-index:5;padding:0 20px}
 .divider-ornament{display:flex;align-items:center;gap:14px;margin:0 auto 24px;opacity:0;animation:fadeUp .9s .6s forwards}
 .divider-ornament::before,.divider-ornament::after{content:"";display:block;height:1px;width:60px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .orn-symbol{color:var(--gold);font-size:.9rem;letter-spacing:.3em}
@@ -170,8 +170,8 @@ nav a{padding:11px 10px;font-size:.56rem}
 <div class="frame"></div>
 <div class="f-corner tl"></div><div class="f-corner tr"></div>
 <div class="f-corner bl"></div><div class="f-corner br"></div>
-<div class="hero-inner">
 <div class="hero-blessing">&#2404; Om Shree Ganeshaya Namah &#2404;<br>Shree Veerabhadreshwara Swamy Prasanna</div>
+<div class="hero-inner">
 <div class="divider-ornament"><span class="orn-symbol">&#10022; &#10022; &#10022;</span></div>
 <div class="hero-names">
 <div class="groom-name">Suguresh C. Honawad</div>
@@ -194,7 +194,7 @@ nav a{padding:11px 10px;font-size:.56rem}
 <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-label">Secs</span></div>
 </div>
 </div>
-<div class="scroll-hint"><span>Scroll</span><div class="scroll-icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div>
+<div class="scroll-hint"><span style="font-size:.52rem;letter-spacing:.22em;opacity:.7;margin-bottom:2px">Scroll down to explore</span><span>Scroll</span><div class="scroll-icon"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div>
 </section>
 
 <nav><ul>
